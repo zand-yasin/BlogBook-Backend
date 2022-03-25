@@ -2,6 +2,7 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+# ModuleNotFoundError: No module named 'dj_database_url'
 
 
 def main():
