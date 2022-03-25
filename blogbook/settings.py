@@ -29,7 +29,8 @@ if ENV == "PROD":
 
 AUTH_USER_MODEL = "writers.Writer"
 
-SECRET_KEY = os.environ.get("SECRET_KEY")
+# SECRET_KEY = os.environ.get("SECRET_KEY")
+SECRET_KEY = "SECRET_KEY"
 
 
 CORS_ORIGIN_ALLOW_ALL = False
@@ -101,7 +102,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "blogbook.wsgi.application"
+# WSGI_APPLICATION = "wsgi.application"
+# WSGI_APPLICATION = "blogbook.wsgi.application"
 
 DATABASES = {
     "default": {
