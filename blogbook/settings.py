@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-ENV = os.environ.get("APP_ENV", "PROD")
+ENV = os.environ.get("APP_ENV", "DEV")
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATE_DIR = BASE_DIR / "templates"
@@ -34,7 +34,8 @@ SECRET_KEY = "SECRET_KEY"
 
 
 CORS_ORIGIN_ALLOW_ALL = False
-ALLOWED_HOSTS = ["localhost", ".herokuapp.com"]
+# ALLOWED_HOSTS = ["localhost", ".herokuapp.com"]
+ALLOWED_HOSTS = ["*"]
 CORS_ORIGIN_WHITELIST = (CLIENT_URL,)
 # CORS_ALLOWED_ORIGIN_REGEXES = [r"^https://blogbook\w+\.web\.app$"]
 
